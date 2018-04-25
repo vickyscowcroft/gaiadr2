@@ -1,0 +1,112 @@
+<VOTABLE version="1.3" xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<RESOURCE type="results">
+<COOSYS ID="GAIADR2" epoch="J2015.5" system="ICRS" />
+<INFO name="QUERY_STATUS" value="OK"/>
+<INFO name="QUERY" value=""><![CDATA[SELECT TOP 500 source_id,ra,ra_error,dec,dec_error,parallax,parallax_error,pmra,pmdec,phot_g_mean_mag,bp_rp,radial_velocity,radial_velocity_error,rv_template_logg,rv_template_fe_h,phot_variable_flag,teff_val,a_g_val FROM gaiadr2.gaia_source  WHERE (CONTAINS(POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),CIRCLE('ICRS',15.248208,-71.803139,0.0005555555555555556))=1 OR CONTAINS(POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),CIRCLE('ICRS',15.446375,-72.48625,0.0005555555555555556))=1 OR CONTAINS(POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),CIRCLE('ICRS',15.4561917,-72.0959111,0.0005555555555555556))=1 OR CONTAINS(POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),CIRCLE('ICRS',15.491195,-72.197098,0.0005555555555555556))=1 OR CONTAINS(POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),CIRCLE('ICRS',15.823641000000002,-72.55127,0.0005555555555555556))=1 OR CONTAINS(POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),CIRCLE('ICRS',15.928,-71.873556,0.0005555555555555556))=1 OR CONTAINS(POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),CIRCLE('ICRS',16.001308,-72.23336,0.0005555555555555556))=1 OR CONTAINS(POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),CIRCLE('ICRS',16.0645599,-72.755642,0.0005555555555555556))=1 OR CONTAINS(POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),CIRCLE('ICRS',16.103029,-72.009552,0.0005555555555555556))=1 OR CONTAINS(POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),CIRCLE('ICRS',16.472917,-72.844778,0.0005555555555555556))=1)  ]]></INFO>
+<INFO name="CAPTION" value=""><![CDATA[How to cite and acknowledge Gaia: http://gea.esac.esa.int/archive/documentation/credits.html]]></INFO>
+<INFO name="PAGE" value=""></INFO>
+<INFO name="PAGE_SIZE" value=""></INFO>
+<INFO name="JOBID" value="1524666592127O"><![CDATA[1524666592127O]]></INFO>
+<INFO name="JOBNAME" value=""></INFO>
+<TABLE>
+<FIELD datatype="long" name="source_id" ucd="meta.id">
+<DESCRIPTION>Unique source identifier (unique within a particular Data Release)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="ra" ref="GAIADR2" ucd="pos.eq.ra;meta.main" unit="deg" utype="Char.SpatialAxis.Coverage.Location.Coord.Position2D.Value2.C1">
+<DESCRIPTION>Right ascension</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="ra_error" ucd="stat.error;pos.eq.ra" unit="mas">
+<DESCRIPTION>Standard error of right ascension</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="dec" ref="GAIADR2" ucd="pos.eq.dec;meta.main" unit="deg" utype="Char.SpatialAxis.Coverage.Location.Coord.Position2D.Value2.C2">
+<DESCRIPTION>Declination</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="dec_error" ucd="stat.error;pos.eq.dec" unit="mas">
+<DESCRIPTION>Standard error of declination</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="parallax" ucd="pos.parallax" unit="mas">
+<DESCRIPTION>Parallax</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="parallax_error" ucd="stat.error;pos.parallax" unit="mas">
+<DESCRIPTION>Standard error of parallax</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="pmra" ucd="pos.pm;pos.eq.ra" unit="mas.yr**-1">
+<DESCRIPTION>Proper motion in right ascension direction</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="pmdec" ucd="pos.pm;pos.eq.dec" unit="mas.yr**-1">
+<DESCRIPTION>Proper motion in declination direction</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="phot_g_mean_mag" ucd="phot.mag;stat.mean;em.opt" unit="mag">
+<DESCRIPTION>G-band mean magnitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="bp_rp" ucd="phot.color" unit="mag">
+<DESCRIPTION>BP - RP colour</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="radial_velocity" ucd="spect.dopplerVeloc.opt" unit="km.s**-1">
+<DESCRIPTION>Radial velocity</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="radial_velocity_error" ucd="stat.error;spect.dopplerVeloc.opt" unit="km.s**-1">
+<DESCRIPTION>Radial velocity error</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="rv_template_logg" ucd="stat.fit.param" unit="log(cm.s**-2)">
+<DESCRIPTION>logg of the template used to compute radial velocity</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="rv_template_fe_h" ucd="stat.fit.param" unit="'dex'">
+<DESCRIPTION>Fe/H of the template used to compute radial velocity</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="phot_variable_flag" ucd="meta.code;src.var">
+<DESCRIPTION>Photometric variability flag</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="teff_val" ucd="phys.temperature.effective" unit="K">
+<DESCRIPTION>stellar effective temperature</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="a_g_val" ucd="phys.absorption.gal" unit="mag">
+<DESCRIPTION>line-of-sight extinction in the G band, A_G)</DESCRIPTION>
+</FIELD>
+<DATA>
+<BINARY2>
+<STREAM encoding='base64'>
+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
+DU5PVF9BVkFJTEFCTEV/wAAAf8AAAA==
+</STREAM>
+</BINARY2>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>

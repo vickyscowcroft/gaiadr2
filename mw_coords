@@ -1,0 +1,49 @@
+\ created from statement: select into
+\ /hydra/workarea/heritage/temp_files/aorByObserver2433641526150691467.tbl col
+\ targetname, raj2000, decj2000, naifid, modedisplayname, reqkey, reqtitle,
+\ reqbegintime, reqendtime, progid, pi from
+\ /hydra/workarea/heritage/temp_files/aorByObserver1529991162894140348.tbl with
+\ complete_header
+\RowsRetrieved=34
+\ORIGIN='NASA/IPAC Infrared Science Archive (IRSA), Caltech/JPL'
+\fixlen='T'
+\primary=0
+|Target_name|       RA|      Dec|
+|       char|   double|   double|
+|           |         |         |
+|       null|     null|     null|
+    Zeta_Gem 106.02708  20.57027 
+      DL_Cas   7.49375  60.21194 
+       X_Cyg 310.85083  35.58777 
+       T_Vul  312.8675  28.25055 
+       u_car 164.45083 -59.73222 
+       U_Aql 292.33875  -7.04416 
+       s_vul 297.09916  27.28638 
+      tt_aql 287.05708   1.29861 
+     Del_Cep  337.2925  58.41527 
+      CF_Cas 359.57458  61.22111 
+       t_mon  96.30416   7.08555 
+      cd_cyg 301.11083  34.11222 
+       U_Vul 294.15708  20.33305 
+      sv_vul 297.87875     27.46 
+      CV_Mon     99.27   3.06388 
+     Eta_Aql 298.11791   1.00555 
+    Beta_Dor  83.40625 -62.48972 
+      FF_Aql 284.56125  17.36083 
+      sz_aql 286.16416   1.30611 
+       S_Sge   299.005  16.63472 
+      RT_Aur  97.14166  30.49305 
+      wz_sgr 274.24875 -19.07555 
+       X_Sgr    266.89 -27.83083 
+       U_Sgr 277.97208   -19.125 
+    V367_Sct 278.39666 -10.42722 
+      ru_sct   280.485  -4.11055 
+       W_Sgr   271.255    -29.58 
+       Y_Oph 268.16125  -6.14361 
+       Y_Sgr 275.34541    -18.86 
+       S_Nor 244.71583 -57.89972 
+    V340_Nor 243.32333 -54.23472 
+       V_Cen  218.1375 -56.88777 
+      TW_Nor    241.23 -51.95361 
+      gy_sge 293.80666  19.20222 
+       l_Car 146.311667 -62.507889 
